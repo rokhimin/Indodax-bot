@@ -6,8 +6,7 @@ Discord bot Indodax for check Crypto coins using discordrb.
 ###### Language
 Ruby
 ###### Library or dependencies
-1. Discordrb
-2. Libsodium
+Discordrb, Libsodium, etc
 ###### API
 [API indodax](https://indodax.com/downloads/BITCOINCOID-API-DOCUMENTATION.pdf)
 
