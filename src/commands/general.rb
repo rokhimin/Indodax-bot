@@ -23,7 +23,7 @@ module Bot
                     embed.add_field name: "Owner :", value: "twitter.com/rokhiminwahid | twitter.com/whdzera"
                     embed.add_field name: "Language :", value: "Ruby"
                     embed.add_field name: "Library :", value: "discordrb"
-                    embed.add_field name: "Website :", value: "https://github.com/rokhimin/zendaya"
+                    embed.add_field name: "Website :", value: "https://github.com/rokhimin/discordbot-ruby-indodax"
                 end
             end
 
@@ -32,7 +32,7 @@ module Bot
                 event.respond "Time taken : #{ Time.now - event.timestamp } seconds."
             end
 
-            #initiate API (48 coin ,update 29/7/2019) (coin to idr)
+            #initiate API (48 coin ,update 29/7/2019) (to idr)
             indodax = "https://indodax.com/api/"
             ticker = "_idr/ticker"
             api_btc = "#{indodax}btc#{ticker}"
@@ -80,6 +80,7 @@ module Bot
             api_waves = "#{indodax}waves#{ticker}"
             api_xlm = "#{indodax}xlm#{ticker}"
             api_xem = "#{indodax}xem#{ticker}"
+            api_xem = "#{indodax}xdce#{ticker}"
             api_xrp = "#{indodax}xrp#{ticker}"
             api_xzc = "#{indodax}xzc#{ticker}"
 
@@ -173,7 +174,7 @@ module Bot
                 event.respond "Harga 1 Bitcoin SV(BNB) = Rp #{ title = bnb["ticker"]["last"] }"
             end
 
-            #bnb command
+            #btg command
             command(:btg) do |event|
                 url = api_btg
                 uri = URI(url)
@@ -238,7 +239,7 @@ module Bot
 
             #eth command
             command(:eth) do |event|
-                url = api_doge
+                url = api_eth
                 uri = URI(url)
                 response = Net::HTTP.get(uri)
                 eth = JSON.parse(response)
@@ -247,7 +248,7 @@ module Bot
 
             #eos command
             command(:eos) do |event|
-                url = api_doge
+                url = api_eos
                 uri = URI(url)
                 response = Net::HTTP.get(uri)
                 eos = JSON.parse(response)
@@ -256,7 +257,7 @@ module Bot
 
             #etc command
             command(:etc) do |event|
-                url = api_doge
+                url = api_etc
                 uri = URI(url)
                 response = Net::HTTP.get(uri)
                 etc = JSON.parse(response)
@@ -265,11 +266,254 @@ module Bot
 
             #gard command
             command(:gard) do |event|
-                url = api_doge
+                url = api_gard
                 uri = URI(url)
                 response = Net::HTTP.get(uri)
                 gard = JSON.parse(response)
                 event.respond "Harga 1 Hashgard(GARD) = Rp #{ title = gard["ticker"]["last"] }"
+            end
+
+            #gsc command
+            command(:gsc) do |event|
+                url = api_gsc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                gsc = JSON.parse(response)
+                event.respond "Harga 1 Global Social Chain(GSC) = Rp #{ title = gsc["ticker"]["last"] }"
+            end
+
+            #gxc command
+            command(:gxc) do |event|
+                url = api_gxc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                gxc = JSON.parse(response)
+                event.respond "Harga 1 GXchain(GXC) = Rp #{ title = gxc["ticker"]["last"] }"
+            end
+
+            #hpb command
+            command(:hpb) do |event|
+                url = api_hpb
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                hpb = JSON.parse(response)
+                event.respond "Harga 1 High Performance Blockchain(HPB) = Rp #{ title = hpb["ticker"]["last"] }"
+            end
+
+            #ignis command
+            command(:ignis) do |event|
+                url = api_ignis
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                ignis = JSON.parse(response)
+                event.respond "Harga 1 Ignis(IGNIS) = Rp #{ title = ignis["ticker"]["last"] }"
+            end
+
+            #inx command
+            command(:inx) do |event|
+                url = api_inx
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                inx = JSON.parse(response)
+                event.respond "Harga 1 INMax(INX) = Rp #{ title = inx["ticker"]["last"] }"
+            end
+
+            #ltc command
+            command(:ltc) do |event|
+                url = api_ltc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                ltc = JSON.parse(response)
+                event.respond "Harga 1 LiteCoin(LTC) = Rp #{ title = ltc["ticker"]["last"] }"
+            end
+
+            #neo command
+            command(:neo) do |event|
+                url = api_neo
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                neo = JSON.parse(response)
+                event.respond "Harga 1 Neo(NEO) = Rp #{ title = neo["ticker"]["last"] }"
+            end
+
+            #npxs command
+            command(:npxs) do |event|
+                url = api_npxs
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                npxs = JSON.parse(response)
+                event.respond "Harga 1 Pundi X(NPXS) = Rp #{ title = npxs["ticker"]["last"] }"
+            end
+
+            #nxt command
+            command(:nxt) do |event|
+                url = api_nxt
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                nxt = JSON.parse(response)
+                event.respond "Harga 1 Nxt(NXT) = Rp #{ title = nxt["ticker"]["last"] }"
+            end
+
+            #qnt command
+            command(:qnt) do |event|
+                url = api_qnt
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                qnt = JSON.parse(response)
+                event.respond "Harga 1 Ontology(QNT) = Rp #{ title = qnt["ticker"]["last"] }"
+            end
+
+            #pxg command
+            command(:pxg) do |event|
+                url = api_pxg
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                pxg = JSON.parse(response)
+                event.respond "Harga 1 PlayGame(PXG) = Rp #{ title = pxg["ticker"]["last"] }"
+            end
+
+            #qtum command
+            command(:qtum) do |event|
+                url = api_qtum
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                qtum = JSON.parse(response)
+                event.respond "Harga 1 Qtum(QTUM) = Rp #{ title = qtum["ticker"]["last"] }"
+            end
+
+            #rvn command
+            command(:rvn) do |event|
+                url = api_rvn
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                rvn = JSON.parse(response)
+                event.respond "Harga 1 RavenCoin(RVN) = Rp #{ title = rvn["ticker"]["last"] }"
+            end
+
+            #scc command
+            command(:scc) do |event|
+                url = api_scc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                scc = JSON.parse(response)
+                event.respond "Harga 1 SiaCashCoin(SCC) = Rp #{ title = scc["ticker"]["last"] }"
+            end
+
+            #ssp command
+            command(:ssp) do |event|
+                url = api_ssp
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                ssp = JSON.parse(response)
+                event.respond "Harga 1 Smartshare(SSP) = Rp #{ title = ssp["ticker"]["last"] }"
+            end
+
+            #stq command
+            command(:stq) do |event|
+                url = api_stq
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                stq = JSON.parse(response)
+                event.respond "Harga 1 Storiqa(STQ) = Rp #{ title = stq["ticker"]["last"] }"
+            end
+
+            #sum command
+            command(:sum) do |event|
+                url = api_sum
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                sum = JSON.parse(response)
+                event.respond "Harga 1 Sumokoin(SUM) = Rp #{ title = sum["ticker"]["last"] }"
+            end
+
+            #trx command
+            command(:trx) do |event|
+                url = api_trx
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                trx = JSON.parse(response)
+                event.respond "Harga 1 Tron(TRX) = Rp #{ title = trx["ticker"]["last"] }"
+            end
+
+            #usdc command
+            command(:usdc) do |event|
+                url = api_usdc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                usdc = JSON.parse(response)
+                event.respond "Harga 1 USD Coin(USDC) = Rp #{ title = usdc["ticker"]["last"] }"
+            end
+
+            #usdt command
+            command(:usdt) do |event|
+                url = api_usdt
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                usdt = JSON.parse(response)
+                event.respond "Harga 1 USD Tether(USDT) = Rp #{ title = usdt["ticker"]["last"] }"
+            end
+
+            #vex command
+            command(:vex) do |event|
+                url = api_vex
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                vex = JSON.parse(response)
+                event.respond "Harga 1 Vexanium(VEX) = Rp #{ title = vex["ticker"]["last"] }"
+            end
+
+            #waves command
+            command(:waves) do |event|
+                url = api_waves
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                waves = JSON.parse(response)
+                event.respond "Harga 1 Waves(WAVES) = Rp #{ title = waves["ticker"]["last"] }"
+            end
+
+            #xlm command
+            command(:xlm) do |event|
+                url = api_xlm
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                xlm = JSON.parse(response)
+                event.respond "Harga 1 Stellar Lumens(XLM) = Rp #{ title = xlm["ticker"]["last"] }"
+            end
+
+            #xem command
+            command(:xem) do |event|
+                url = api_xem
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                xem = JSON.parse(response)
+                event.respond "Harga 1 Nem(XEM) = Rp #{ title = xem["ticker"]["last"] }"
+            end
+
+            #xdce command
+            command(:xdce) do |event|
+                url = api_xdce
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                xdce = JSON.parse(response)
+                event.respond "Harga 1 XinFin Network(XDCE) = Rp #{ title = xdce["ticker"]["last"] }"
+            end
+
+            #xrp command
+            command(:xrp) do |event|
+                url = api_xrp
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                xrp = JSON.parse(response)
+                event.respond "Harga 1 Ripple(XRP) = Rp #{ title = xrp["ticker"]["last"] }"
+            end
+
+            #xzc command
+            command(:xzc) do |event|
+                url = api_xzc
+                uri = URI(url)
+                response = Net::HTTP.get(uri)
+                xzc = JSON.parse(response)
+                event.respond "Harga 1 ZCoin(XZC) = Rp #{ title = xzc["ticker"]["last"] }"
             end
 
         end
