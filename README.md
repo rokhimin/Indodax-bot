@@ -6,7 +6,7 @@ bot discord for check price crypto coins using API Indodax
 ###### Language :
 Ruby
 ###### Library or dependencies :
-Discordrb, Libsodium, etc
+Discordrb
 ###### API :
 [API indodax](https://indodax.com/downloads/BITCOINCOID-API-DOCUMENTATION.pdf)
 
