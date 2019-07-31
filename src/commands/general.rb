@@ -8,7 +8,7 @@ module Bot
                 servers = event.bot.servers 
                 event.channel.send_embed do |embed| 
                 embed.colour = 0xff8040 
-                embed.add_field name: "basic", value: "`[help]` `[about]` `[ping]`" 
+                embed.add_field name: ".", value: "`[help]` `[about]` `[ping]`" 
                 embed.add_field name: "__**INDODAX**__", value: "`[btc]` `[ten]` `[abyss]` `[act]` `[ada]` `[aoa]` `[bcd]` `[bch]` `[bsv]` `[bnb]` `[btg]` `[bts]` `[btt]` `[cro]` `[dash]` `[dax]` `[doge]` `[eth]` `[eos]` `[etc]` `[gard]` `[gsc]` `[gxc]` `[hpb]` `[ignis]` `[inx]` `[ltc]` `[neo]` `[npxs]` `[nxt]` `[ont]` `[pxg]` `[qtum]` `[rvn]` `[scc]` `[ssp]` `[stq]` `[sumo]` `[trx]` `[usdc]` `[usdt]` `[vex]` `[waves]` `[xlm]` `[xem]` `[xdce]` `[xrp]` `[xze]`" 
                 end
             end
@@ -44,8 +44,11 @@ module Bot
                 event.channel.send_embed do |embed| 
                 embed.colour = 0xff8040
                 embed.footer = Discordrb::Webhooks::EmbedFooter.new(text: ">market indodax")
-                embed.add_field name: "Harga 1 #{indodax}", value: "Rp #{ title = btc["ticker"]["last"] }" 
-
+                embed.add_field name: "Last price #{indodax.upcase}", value: "Rp #{ title = btc["ticker"]["last"] }"
+                embed.add_field name: "High", value: "Rp #{ title = btc["ticker"]["high"] }", inline: true
+                embed.add_field name: "Low", value: "Rp #{ title = btc["ticker"]["low"] }", inline: true
+                embed.add_field name: "Volume #{indodax.upcase} ", value: "Rp #{ title = btc["ticker"]["vol_#{indodax}"] }"
+                embed.add_field name: "Volume IDR", value: "Rp #{ title = btc["ticker"]["vol_idr"] }", inline: true
                 end
             end
 
