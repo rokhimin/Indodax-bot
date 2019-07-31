@@ -4,11 +4,13 @@
   "repository": "https://github.com/rokhimin/discordbot-ruby-indodax",
   "website": "https://rokhimin.github.io/blog/",
   "keywords": ["bot", "discordrb"],
-  "env": {
-        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby",
-	"BUILDPACK_URL": "https://github.com/challengee/heroku-buildpack-libsodium.git",
-	"BUILDPACK_URL": "https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
-    },
+  "buildpacks": [
+    {
+        "url": "https://github.com/heroku/heroku-buildpack-ruby",
+	"url": "https://github.com/challengee/heroku-buildpack-libsodium.git",
+	"url": "https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
+    }
+  ],
     "scripts": {
       "postdeploy": "ruby bot.rb"
     },
