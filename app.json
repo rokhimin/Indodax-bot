@@ -6,8 +6,8 @@
   "keywords": ["bot", "discordrb"],
   "env": {
         "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby",
-		"https://github.com/challengee/heroku-buildpack-libsodium.git"
-		"https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
+	"BUILDPACK_URL": "https://github.com/challengee/heroku-buildpack-libsodium.git",
+	"BUILDPACK_URL": "https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
     },
     "scripts": {
       "postdeploy": "ruby bot.rb"
