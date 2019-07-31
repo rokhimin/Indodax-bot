@@ -14,6 +14,7 @@ Discordrb
 `ruby bot.rb`
 
 ### Screenshots 
-![](https://i.imgur.com/9gFqipX.jpg)
+![](https://i.imgur.com/MuQiJTa.jpg)
+![](https://i.imgur.com/dSYBDwl.jpg)
 
 Thankyou :)
