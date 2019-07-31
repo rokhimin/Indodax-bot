@@ -1,0 +1,15 @@
+{
+  "name": "INDODAX bot - Rokhimin whd",
+  "description": "A Indodax bot discord",
+  "repository": "https://github.com/rokhimin/discordbot-ruby-indodax",
+  "website": "https://rokhimin.github.io/blog/",
+  "keywords": ["bot", "discordrb"],
+  "env": {
+        "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-ruby",
+		"https://github.com/challengee/heroku-buildpack-libsodium.git"
+		"https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
+    },
+    "scripts": {
+      "postdeploy": "ruby bot.rb"
+    },
+}
