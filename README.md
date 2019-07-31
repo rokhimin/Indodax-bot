@@ -13,6 +13,11 @@ Discordrb
 ### How to run ?
 `ruby bot.rb`
 
+### Deploy
+###### Herku
+## Deploy
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)  
+
 ### Screenshots 
 ![](https://i.imgur.com/MuQiJTa.jpg)
 ![](https://i.imgur.com/dSYBDwl.jpg)
