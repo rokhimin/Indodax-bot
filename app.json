@@ -6,12 +6,13 @@
   "keywords": ["bot", "discordrb"],
   "buildpacks": [
     {
-        "url": "https://github.com/heroku/heroku-buildpack-ruby",
+        "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    },
+	{
 	"url": "https://github.com/challengee/heroku-buildpack-libsodium.git",
-	"url": "https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
-    }
-  ],
-    "scripts": {
-      "postdeploy": "ruby bot.rb"
-    }
+	    },
+	{
+		"url": "https://github.com/HYPERHYPER/heroku-buildpack-ffmpeg.git"
+		    }
+  ]
 }
