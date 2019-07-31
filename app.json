@@ -13,5 +13,5 @@
   ],
     "scripts": {
       "postdeploy": "ruby bot.rb"
-    },
+    }
 }
