@@ -12,6 +12,7 @@
     }
   ],
     "scripts": {
+      "postdeploy": "bundle install",
       "postdeploy": "ruby bot.rb"
     }
 }
