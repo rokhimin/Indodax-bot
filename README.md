@@ -14,8 +14,8 @@ Discordrb
 `ruby bot.rb`
 
 ### Deploy
-###### Herku
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)  
+###### Heroku
+[here](https://github.com/rokhimin/discordrb-heroku)
 
 ### Screenshots 
 ![](https://i.imgur.com/MuQiJTa.jpg)
