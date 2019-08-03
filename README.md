@@ -11,7 +11,8 @@ Discordrb
 [API indodax](https://indodax.com/downloads/BITCOINCOID-API-DOCUMENTATION.pdf)
 
 ### How to run ?
-`ruby bot.rb`
+```bundle install```
+```ruby bot.rb```
 
 ### Deploy
 ###### Heroku
