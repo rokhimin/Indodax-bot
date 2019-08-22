@@ -12,14 +12,14 @@ Discordrb
 
 ### How to run ?
 - ```bundle install```
-- ```ruby bot.rb```
+- ```ruby linkstart.rb```
 
 ### Deploy
 ###### Heroku
 [here](https://github.com/rokhimin/discordrb-heroku)
 
-### Screenshots 
+### Screenshots
 ![](https://i.imgur.com/MuQiJTa.jpg)
 ![](https://i.imgur.com/dSYBDwl.jpg)
 
-Thankyou :)
+:)
