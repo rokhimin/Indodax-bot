@@ -19,7 +19,7 @@ Discordrb
 [Heroku](https://github.com/rokhimin/discordrb-heroku)
 
 ### Screenshots
-![](https://i.imgur.com/JJiq4TO.jpg)
-![](https://i.imgur.com/Mpcfh17.jpg)
+- ![](https://i.imgur.com/JJiq4TO.jpg)
+- ![](https://i.imgur.com/Mpcfh17.jpg)
 
 
