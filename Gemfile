@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 
 gem 'discordrb', git: 'git://github.com/meew0/discordrb.git'

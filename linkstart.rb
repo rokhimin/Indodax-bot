@@ -9,12 +9,20 @@ require_relative 'config/config.rb'
 module Bot
     bot = Discordrb::Commands::CommandBot.new token: configatron.token, prefix: configatron.prefix
 
-    # Discord commands
-    module DiscordCommands; end
+    # Discord general commands
+    module DiscordGeneralCommands; end
 
     Dir['src/commands/*.rb'].each { |mod| load mod }
-    DiscordCommands.constants.each do |mod|
-    bot.include! DiscordCommands.const_get mod
+    DiscordGeneralCommands.constants.each do |mod|
+    bot.include! DiscordGeneralCommands.const_get mod
+    end
+
+    # Discord general commands
+    module DiscordIndodaxCommands; end
+
+    Dir['src/commands/indodax/*.rb'].each { |mod| load mod }
+    DiscordIndodaxCommands.constants.each do |mod|
+    bot.include! DiscordIndodaxCommands.const_get mod
     end
 
     # Discord events
@@ -24,6 +32,9 @@ module Bot
     DiscordEvents.constants.each do |mod|
     bot.include! DiscordEvents.const_get mod
     end
+
+    # about
+    puts configatron.site
 
     # Run the bot
     bot.run
