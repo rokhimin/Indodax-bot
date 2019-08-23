@@ -1,7 +1,7 @@
 # DiscordBot Ruby Indodax
 
 ### About
-bot discord for check price crypto coins using API Indodax
+bot discord for check price crypto coins | API Indodax
 
 ### Info
 ###### Language :
