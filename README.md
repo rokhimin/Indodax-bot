@@ -1,8 +1,9 @@
 # DiscordBot Ruby Indodax
 
+### About
 bot discord for check price crypto coins using API Indodax
 
-### Requires
+### Info
 ###### Language :
 Ruby
 ###### Library or dependencies :
@@ -10,16 +11,15 @@ Discordrb
 ###### API :
 [API indodax](https://indodax.com/downloads/BITCOINCOID-API-DOCUMENTATION.pdf)
 
-### How to run ?
+### Run
 - ```bundle install```
 - ```ruby linkstart.rb```
 
 ### Deploy
-###### Heroku
-[here](https://github.com/rokhimin/discordrb-heroku)
+[Heroku](https://github.com/rokhimin/discordrb-heroku)
 
 ### Screenshots
-![](https://i.imgur.com/MuQiJTa.jpg)
-![](https://i.imgur.com/dSYBDwl.jpg)
+![](https://i.imgur.com/JJiq4TO.jpg)
+![](https://i.imgur.com/Mpcfh17.jpg)
 
-:)
+
