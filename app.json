@@ -1,9 +1,9 @@
 {
-  "name": "INDODAX bot - Rokhimin whd",
+  "name": "INDODAX bot",
   "description": "A Indodax bot discord",
   "repository": "https://github.com/rokhimin/discordbot-ruby-indodax",
-  "website": "https://rokhimin.github.io/blog/",
-  "keywords": ["bot", "discordrb"],
+  "website": "https://rokhimin.github.io",
+  "keywords": ["bot", "discord"],
   "buildpacks": [
     {
         "url": "https://github.com/heroku/heroku-buildpack-ruby"
@@ -16,6 +16,6 @@
 	  }
   ],
     "scripts": {
-      "postdeploy": "ruby bot.rb"
+      "postdeploy": "ruby linkstart.rb"
     }
 }
