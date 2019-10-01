@@ -12,7 +12,7 @@ module Bot
     # Discord general commands
     module DiscordGeneralCommands; end
 
-    Dir['src/commands/*.rb'].each { |mod| load mod }
+    Dir['app/commands/*.rb'].each { |mod| load mod }
     DiscordGeneralCommands.constants.each do |mod|
     bot.include! DiscordGeneralCommands.const_get mod
     end
@@ -20,7 +20,7 @@ module Bot
     # Discord general commands
     module DiscordIndodaxCommands; end
 
-    Dir['src/commands/indodax/*.rb'].each { |mod| load mod }
+    Dir['app/commands/indodax/*.rb'].each { |mod| load mod }
     DiscordIndodaxCommands.constants.each do |mod|
     bot.include! DiscordIndodaxCommands.const_get mod
     end
@@ -28,7 +28,7 @@ module Bot
     # Discord events
     module DiscordEvents; end
 
-    Dir['src/events/*.rb'].each { |mod| load mod }
+    Dir['app/events/*.rb'].each { |mod| load mod }
     DiscordEvents.constants.each do |mod|
     bot.include! DiscordEvents.const_get mod
     end

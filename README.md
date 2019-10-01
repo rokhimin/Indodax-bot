@@ -1,4 +1,4 @@
-# DiscordBot Ruby Indodax
+# Discordrb Indodax
 
 ### About
 bot discord for check price crypto coins | API Indodax
@@ -14,9 +14,6 @@ Discordrb
 ### Run
 - ```bundle install```
 - ```ruby linkstart.rb```
-
-### Deploy
-[Heroku](https://github.com/rokhimin/discordrb-heroku)
 
 ### Screenshots
 - ![](https://i.imgur.com/JJiq4TO.jpg)
