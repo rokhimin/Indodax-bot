@@ -5,7 +5,7 @@
 # Indodax Bot
 
 ### About
-bot discord for check price crypto coins | API Indodax
+discord and telegram bot for check price crypto coins using API Indodax, written in Ruby (discordrb & telegram-bot-ruby)
 
 ### Info
 ###### API :
