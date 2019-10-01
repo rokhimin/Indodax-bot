@@ -34,7 +34,7 @@ end
 namespace :run do
   desc "running"
   task :rspec do
-    sh 'rspec spec/index_spec.rb'
+    puts "TDD is shit"
   end
   task :discord do
     sh 'ruby bin/discord'
