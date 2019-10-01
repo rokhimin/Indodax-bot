@@ -1,52 +1,67 @@
-GIT
-  remote: git://github.com/meew0/discordrb.git
-  revision: 329045797fb2eb76275d47403eb08016458910e6
+GEM
+  remote: https://rubygems.org/
   specs:
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
     discordrb (3.3.0)
       discordrb-webhooks (~> 3.3.0)
       ffi (>= 1.9.24)
       opus-ruby
-      rbnacl (~> 6.0)
+      rbnacl (~> 3.4.0)
       rest-client (>= 2.1.0.rc1)
       websocket-client-simple (>= 0.3.0)
     discordrb-webhooks (3.3.0)
       rest-client (>= 2.1.0.rc1)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    configatron (4.5.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
+    equalizer (0.0.11)
     event_emitter (0.2.6)
+    faraday (0.16.2)
+      multipart-post (>= 1.2, < 3)
     ffi (1.11.1)
-    ffi (1.11.1-x64-mingw32)
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    json (1.8.6)
-    mime-types (3.2.2)
+    ice_nine (0.11.2)
+    inflecto (0.0.2)
+    json (2.2.0)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.0331)
+    mime-types-data (3.2019.0904)
+    mini_portile2 (2.4.0)
+    multipart-post (2.1.1)
     netrc (0.11.0)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     opus-ruby (1.0.1)
       ffi
-    rbnacl (6.0.1)
+    rake (13.0.0)
+    rbnacl (3.4.0)
       ffi
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rest-client (2.1.0-x64-mingw32)
-      ffi (~> 1.9)
-      http-accept (>= 1.7.0, < 2.0)
-      http-cookie (>= 1.0.2, < 2.0)
-      mime-types (>= 1.16, < 4.0)
-      netrc (~> 0.8)
+    telegram-bot-ruby (0.11.0)
+      faraday
+      inflecto
+      virtus
+    thread_safe (0.3.6)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
     websocket (1.2.8)
     websocket-client-simple (0.3.0)
       event_emitter
@@ -54,12 +69,13 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
 
 DEPENDENCIES
-  configatron
-  discordrb!
-  json (~> 1.8, >= 1.8.3)
+  discordrb
+  json
+  nokogiri
+  rake
+  telegram-bot-ruby
 
 BUNDLED WITH
    2.0.2

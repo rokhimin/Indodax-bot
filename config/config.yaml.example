@@ -1,0 +1,25 @@
+# DISCORD config
+##################################################
+# Discord client ID
+client_id_discord: ''
+
+# Discord token
+token_discord: ''
+
+# Discord command prefix
+prefix_discord: 'i>'
+
+# Discord ID of bot owner
+owner_discord: ''
+
+
+
+# TELEGRAM config
+##################################################
+
+# Telegram token
+token_telegram: ''
+
+# Message
+greeting_message: "Hi! welcome to indodax bot!"
+farewell_message: "Bye! :("

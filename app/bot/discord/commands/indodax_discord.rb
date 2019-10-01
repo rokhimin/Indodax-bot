@@ -1,11 +1,32 @@
-module Bot
-    module DiscordIndodaxCommands
+module Bot::DiscordCommands
         module Indodax
             extend Discordrb::Commands::CommandContainer
 
-			#indodax command
-            command(:indodax, description: 'check crypto coins.', min_args: 1,
-                   usage: 'indodax <query>') do |event, *query|
+            #about
+            command(:about) do |event|
+                servers = event.bot.servers
+                event.channel.send_embed do |embed|
+                    embed.colour = 0xff8040
+                    embed.title = '**Indodax Bot**'
+                    embed.thumbnail = Discordrb::Webhooks::EmbedThumbnail.new(url: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png')
+                    embed.add_field name: "Dev :", value: "twitter.com/rokhiminwahid | twitter.com/whdzera"
+                    embed.add_field name: "Written :", value: "Ruby Language"
+                end
+            end
+
+            #help
+            command(:help) do |event|
+                servers = event.bot.servers
+                event.channel.send_embed do |embed|
+                embed.colour = 0xff8040
+                embed.add_field name: "**GENERAL**", value: "`i>about`"
+                embed.add_field name: "**INDODAX**", value: "`i>price <name coins>` btc, eth, xlm, ten..."
+                end
+            end
+
+			#check price
+            command(:price, description: 'check crypto coins.', min_args: 1,
+                   usage: 'price <query>') do |event, *query|
                 indodax = query.join(' ')
                 url = "https://indodax.com/api/#{indodax}_idr/ticker"
                 uri = URI(url)
@@ -25,7 +46,6 @@ module Bot
 
 
 
-        end
     end
 end
 
