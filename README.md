@@ -29,18 +29,6 @@ install gem :
  ```
  rake gem:install
  ```
-create db :
- ```
- rake db:create
- ```
-migration db :
- ```
- rake db:migrate
- ```
-drop db :
- ```
- rake db:drop
- ```
 test :
  ```
  rake run:rspec
