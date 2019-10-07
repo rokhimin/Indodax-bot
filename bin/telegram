@@ -6,7 +6,7 @@ require 'net/http'
 require 'json'
 require 'ostruct'
 require 'yaml'
-require './app/bot/telegram/indodax_telegram'
+require './app/bot/telegram/commands/indodax_telegram'
 
 puts 'Bot Running..'
 CONFIG = OpenStruct.new YAML.load_file 'config/config.yaml'

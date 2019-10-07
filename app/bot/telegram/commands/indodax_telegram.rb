@@ -1,6 +1,4 @@
-
 class Indodax
-
     def self.works
             Telegram::Bot::Client.run(TOKEN) do |bot|
             bot.listen do |message|
@@ -22,6 +20,4 @@ class Indodax
             end
             end
     end
-
-
 end
