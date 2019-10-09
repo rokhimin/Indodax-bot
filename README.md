@@ -16,7 +16,7 @@ discord and telegram bot for check price crypto coins using API Indodax, written
 | ------------- | ------------- | ------------- |
 |  help  | i>help | /help |
 | about  | i>about | /about |
-| price | i>price <name_coin>` | /price <name_coin> |
+| price | i>price <name_coin> | /price <name_coin> |
 
 ### Screenshots
 ##### Discord
@@ -33,11 +33,13 @@ test :
  ```
  rake run:rspec
  ```
-run bot discord :
+ 
+ ### Run Bot
+discord :
  ```
  rake run:discord
  ```
-run bot telegram :
+telegram :
  ```
  rake run:telegram
  ```
