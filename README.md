@@ -1,7 +1,7 @@
 
-![Lang](https://img.shields.io/badge/Language-Ruby-red)
+![Lang](https://img.shields.io/badge/language-ruby-red)
 [![Build Status](https://travis-ci.com/rokhimin/Indodax-bot.svg?branch=master)](https://travis-ci.com/rokhimin/Indodax-bot)
-![Coverage Status](https://img.shields.io/badge/coverage-99%25-green)
+![Coverage Status](https://img.shields.io/badge/coverage-99%25-brightgreen)
 # Indodax Bot
 
 ### About
